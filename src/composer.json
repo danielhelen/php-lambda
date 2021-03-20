@@ -1,0 +1,13 @@
+{
+  "name": "danielhelen/php-lambda",
+  "description": "A simple example of an AWS Lambda function that uses a custom runtime to execute code written in PHP",
+  "authors": [
+    {
+      "name": "Daniel Helen",
+      "homepage": "https://www.danielhelen.com"
+    }
+  ],
+  "require": {
+    "bref/bref": "^1.2"
+  }
+}
