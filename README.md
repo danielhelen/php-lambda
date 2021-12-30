@@ -24,11 +24,11 @@ will prepare the code for production and output a `package.zip` file. Simply run
 
 Before creating the CloudFormation stacks in the AWS console, the `package.zip` file needs to be uploaded to an S3 
 bucket. This is because the Lambda function needs some code when it is first created. For future releases of the source 
-code, run `make buld` again and upload the zip file via the Lambda console. 
+code, run `make build` again and upload the zip file via the Lambda console. 
 
 Use the CloudFormation console to create the Lambda function using the `lambda.json` file. You will need to 
-specify the bucket name and object key of the the compressed source code in S3. You can also change the custom runtime 
-layer that it uses but a default is provided. Take a look at the list of available 
+specify the bucket name and object key of the compressed source code in S3. You can also change the custom runtime layer
+that it uses but a default is provided. Take a look at the list of available 
 [Bref runtimes](https://runtimes.bref.sh/). They provide runtimes for different versions of PHP and ones suitable for 
 different situations such as serving web requests or running simple functions.
 
